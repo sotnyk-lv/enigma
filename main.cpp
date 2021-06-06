@@ -8,18 +8,6 @@
 #include "Enigma.h"
 #include "time_counting.h"
 
-void letters_to_numbers(std::string &text, std::vector<int> &numbers) {
-    for (auto &letter: text) {
-        numbers.emplace_back(static_cast<int>(letter) - static_cast<int>('A'));
-    }
-}
-
-void numbers_to_letters(std::string &text, std::vector<int> &numbers) {
-    for (auto &number: numbers) {
-        text += (static_cast<char>(number + static_cast<int>('A') ));
-    }
-}
-
 int main() {
 
     std::string text = "A";
